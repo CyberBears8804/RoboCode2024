@@ -7,19 +7,20 @@ package frc.robot.commands;
 import static frc.robot.Constants.LauncherConstants.*;
 
 import edu.wpi.first.wpilibj2.command.Command;
-import frc.robot.subsystems.PWMLauncher;
+import frc.robot.subsystems.CANLauncher;
+//import frc.robot.subsystems.PWMLauncher;
 
 // import frc.robot.subsystems.CANLauncher;
 
 public class PrepareLaunch extends Command {
-  PWMLauncher m_launcher;
+  CANLauncher m_launcher;
 
   // CANLauncher m_launcher;
 
   /** Creates a new PrepareLaunch. */
-  public PrepareLaunch(PWMLauncher launcher) {
+  public PrepareLaunch(CANLauncher m_launcher2) {
     // save the launcher system internally
-    m_launcher = launcher;
+    m_launcher = m_launcher2;
 
     // indicate that this command requires the launcher system
     addRequirements(m_launcher);
