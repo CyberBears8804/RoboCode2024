@@ -22,19 +22,19 @@ public final class Constants {
 
   public static class DrivetrainConstants {
     // PWM ports/CAN IDs for motor controllers
-    public static final int kLeftRearID = 1;
-    public static final int kLeftFrontID = 2;
-    public static final int kRightRearID = 3;
-    public static final int kRightFrontID = 4;
+    public static final int kLeftRearID = 12;
+    public static final int kLeftFrontID = 11;
+    public static final int kRightRearID = 14;
+    public static final int kRightFrontID = 13;
 
     // Current limit for drivetrain motors
-    public static final int kCurrentLimit = 60;
+    public static final int kCurrentLimit = 40;
   }
 
   public static class LauncherConstants {
     // PWM ports/CAN IDs for motor controllers
-    public static final int kFeederID = 5;
-    public static final int kLauncherID = 6;
+    public static final int kFeederID = 15;
+    public static final int kLauncherID = 16;
 
     // Current limit for launcher and feed wheels
     public static final int kLauncherCurrentLimit = 80;
@@ -44,9 +44,9 @@ public final class Constants {
     // in reverse
     public static final double kLauncherSpeed = 1;
     public static final double kLaunchFeederSpeed = 1;
-    public static final double kIntakeLauncherSpeed = -1;
-    public static final double kIntakeFeederSpeed = -.2;
+    public static final double kIntakeLauncherSpeed = -.25;
+    public static final double kIntakeFeederSpeed = -.25;
 
-    public static final double kLauncherDelay = 1;
+    public static final double kLauncherDelay = 1.5;
   }
 }
